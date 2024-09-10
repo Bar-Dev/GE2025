@@ -13,6 +13,19 @@
     <title>Neutral Site</title>
 </head>
 <body>
+    <nav style="height: 70px; background-color: #f8f9fa; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
+        <div style="width: 150px; height: 50px; background-color: #ddd; display: flex; align-items: center; justify-content: center;">
+          Logo
+        </div>
+        <div>
+          <a href="#" style="margin-right: 20px; text-decoration: none; color: #333;">Tab 1</a>
+          <a href="#" style="margin-right: 20px; text-decoration: none; color: #333;">Tab 2</a>
+          <a href="#" style="text-decoration: none; color: #333;">Tab 3</a>
+        </div>
+      </nav>
+      
+      <!-- Add margin to the top of your existing content -->
+      <div style="margin-top: 70px;">
     <div class="container-fluid">
         <div class="row">
             <div class="col-6">
@@ -142,7 +155,7 @@
                 <div class="row">
                     <div class="col-12">
                     <div class="ck" id="CK">
-                        <select id="numberDropdown2" class="form-control">
+                        <select id="numberDropdown2" class="form-control" style="display: none;">
                             <option value="" disabled selected>Please select area</option>
                             <option value="CW1Elect">Carlow Electoral Area</option>
                             <option value="CW2Elect">Mhuinebheag Electoral Area</option>
@@ -151,7 +164,7 @@
                         </div>
                     </div>
                         <div class="row">
-                            <div class="candidates" id="CW1Elect">
+                            <div class="candidates" id="CW1Elect" style="display: none;">
                                 <ul>
                                     <li>Molly Aylesbury - Green Party/Comhaontas Glas</li>
                                     <li>Fergal Browne - Fine Gael</li>
@@ -173,7 +186,7 @@
                                     <li>Rory Woods - The Irish People</li>
                                 </ul>
                             </div>
-                            <div class="candidates" id="CW2Elect">
+                            <div class="candidates" id="CW2Elect" style="display: none;">
                                 <ul>
                                     <li>Michael Doran - Fine Gael</li>
                                     <li>Áine Gladney - Sinn Féin</li>
@@ -185,7 +198,7 @@
                                     <li>Willie Quinn - The Labour Party</li>
                                 </ul>
                             </div>
-                            <div class="candidates" id="CW3Elect">
+                            <div class="candidates" id="CW3Elect" style="display: none;">
                                 <ul>
                                     <li>John Cahill - People Before Profit</li>
                                     <li>Catherine Callaghan - Fine Gael</li>
@@ -245,6 +258,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/map.js"></script>
 </body>

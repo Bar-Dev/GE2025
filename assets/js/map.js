@@ -10,6 +10,18 @@ document.addEventListener("DOMContentLoaded", function() {
         { id: 'cork-south-west-area', img: 'cork-south-west-img', value: 'CSW' },
         { id: 'donegal-area', img: 'donegal-img', value: 'DO' },
         { id: 'dublin-outer-area', img: 'dublin-outer-img', value: 'DUO' },
+        { id: 'dublin-bay-north-area', img: 'dublin-bay-north-area', value: 'DBN' },
+        { id: 'dublin-fingal-west-area', img: 'dublin-fingal-west-area', value: 'DFW' },
+        { id: 'dublin-fingal-east-area', img: 'dublin-fingal-east-area', value: 'DFE' },
+        { id: 'dublin-west-area', img: 'dublin-west-area', value: 'DWA' },
+        { id: 'dublin-mid-west-area', img: 'dublin-mid-west-area', value: 'DMW' },
+        { id: 'dublin-south-west-area', img: 'dublin-south-west-area', value: 'DSW' },
+        { id: 'dublin-rathdown-area', img: 'dublin-rathdown-area', value: 'DRD' },
+        { id: 'dun-laoghaire-area', img: 'dun-laoghaire-area', value: 'DUL' },
+        { id: 'dublin-north-west-area', img: 'dublin-north-west-area', value: 'DNW' },
+        { id: 'dublin-central-area', img: 'dublin-central-area', value: 'DUC' },
+        { id: 'dublin-south-central-area', img: 'dublin-south-central-area', value: 'DSC' },
+        { id: 'dublin-bay-south-area', img: 'dublin-bay-south-area', value: 'DBS' },
         { id: 'galway-west-area', img: 'galway-west-img', value: 'GW' },
         { id: 'galway-east-area', img: 'galway-east-img', value: 'GE' },
         { id: 'kerry-area', img: 'kerry-img', value: 'KY' },
@@ -141,3 +153,4 @@ function hideSubImage() {
     const subImageContainer = document.getElementById('sub-image-container');
     subImageContainer.style.display = "none";
 }
+
