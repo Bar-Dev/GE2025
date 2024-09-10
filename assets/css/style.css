@@ -1,0 +1,409 @@
+.carlow_kilkenny_area, .CK, .CM, .CL, .CE, .CNC, .CNW, .CSC, .CSW, .DBN, .DBNM, .DBS, .DFE, .DFW, .DMW, .DNW, .DRD, .DSC, .DSW, .DWA, .DO, .DUC, .DUL, .DUO, .GW, .GE, .KY, .KN, .KS, .LCI, .LCO, .LA, .LW, .LO, .MO, .ME, .MW, .OF, .RG, .SL, .TN, .TS, .WD, .WX, .WW, .WI {
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Make images ignore mouse events */
+}
+
+.CK { 
+    top: 436px;
+    left: 352px;
+}
+.CM { 
+    top: 189px;
+    left: 294px;
+}
+.CL { 
+    top: 395px;
+    left: 108px; 
+}
+.CE { 
+    top: 534px;
+    left: 238px; 
+}
+.CNC { 
+    top: 557px;
+    left: 228px;
+}
+.CNW { 
+    top: 523px;
+    left: 161px; 
+}
+.CSC { 
+    top: 603px;
+    left: 243px;
+}
+.CSW { 
+    top: 613px;
+    left: 72px;
+}
+.DO { 
+    top: 30px;
+    left: 224px; 
+}
+.DUO { 
+    top: 316px;
+    left: 443px; 
+}
+.DBNM { 
+    top: 316px;
+    left: 443px; 
+}
+.GW { 
+    top: 303px;
+    left: 75px;
+}
+.GE { 
+    top: 309px;
+    left: 177px;
+}
+.KY { 
+    top: 487px;
+    left: 44px;
+}
+.KN { 
+    top: 347px;
+    left: 399px;
+}
+.KS { 
+    top: 350px;
+    left: 387px; 
+}
+.LCI { 
+    top: 463px;
+    left: 228px; 
+}
+.LCO { 
+    top: 474px;
+    left: 164px;
+}
+.LA { 
+    top: 388px;
+    left: 327px;
+}
+.LW { 
+    top: 267px;
+    left: 296px; 
+}
+.LO { 
+    top: 238px;
+    left: 426px; 
+}
+.MO { 
+    top: 199px;
+    left: 85px; 
+}
+.ME { 
+    top: 271px;
+    left: 401px; 
+}
+.MW { 
+    top: 290px;
+    left: 369px; 
+}
+.OF { 
+    top: 353px;
+    left: 291px; 
+}
+.RG { 
+    top: 238px;
+    left: 220px; 
+}
+.SL { 
+    top: 156px;
+    left: 191px;
+}
+.TN { 
+    top: 395px;
+    left: 253px; 
+}
+.TS { 
+    top: 480px;
+    left: 260px; 
+}
+.WD { 
+    top: 528px;
+    left: 283px;
+}
+.WX { 
+    top: 489px; 
+    left: 399px; 
+}
+.WW { 
+    top: 424px;
+    left: 422px; 
+}
+.WI { 
+    top: 383px;
+    left: 419px; 
+}
+
+/* Modal container */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    width: 453px;
+    height: 620px;
+    max-width: 700px;
+    left: 100px;
+    top: 90px;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Sub-image container */
+#sub-image-container {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+}
+
+#sub-image {
+    width: 200px;
+    height: auto;
+}
+
+#dublin-bay-north-img {
+    position: absolute;
+    top: 313px;
+    left: 252px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+area#dublin-bay-north-area:hover + #dublin-bay-north-img {
+    opacity: 1;
+}
+
+/* Styles for dublin-fingal-west-area */
+#dublin-fingal-west-img {
+    position: absolute;
+    top: 67px;
+    left: 106px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+area#dublin-fingal-west-area:hover + #dublin-fingal-west-img {
+    opacity: 1;
+}
+
+/* Styles for dublin-fingal-east-area */
+#dublin-fingal-east-img {
+    position: absolute;
+    top: 215px;
+    left: 222px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+}
+
+area#dublin-fingal-east-area:hover + #dublin-fingal-east-img {
+    opacity: 1;
+}
+
+/* Styles for dublin-west-area */
+#dublin-west-img {
+    position: absolute;
+    top: 285px;
+    left: 83px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+area#dublin-west-area:hover + #dublin-west-img {
+    opacity: 1;
+}
+
+/* Styles for dublin-mid-west-area */
+#dublin-mid-west-img {
+    position: absolute;
+    top: 395px;
+    left: 31px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+area#dublin-mid-west-area:hover + #dublin-mid-west-img {
+    opacity: 1;
+}
+
+/* Styles for dublin-south-west-area */
+#dublin-south-west-img {
+    position: absolute;
+    top: 447px;
+    left: 102px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+area#dublin-south-west-area:hover + #dublin-south-west-img {
+    opacity: 1;
+}
+
+/* Styles for dublin-rathdown-area */
+#dublin-rathdown-img {
+    position: absolute;
+    top: 459px;
+    left: 216px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+area#dublin-rathdown-area:hover + #dublin-rathdown-img {
+    opacity: 1;
+}
+
+/* Styles for dun-laoghaire-area */
+#dun-laoghaire-img {
+    position: absolute;
+    top: 461px;
+    left: 274px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+area#dun-laoghaire-area:hover + #dun-laoghaire-img {
+    opacity: 1;
+}
+
+/* Styles for dublin-north-west-area */
+#dublin-north-west-area-img {
+    position: absolute;
+    top: 347px;
+    left: 194px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+area#dublin-north-west-area:hover + #dublin-north-west-area-img {
+    opacity: 1;
+}
+
+/* Styles for dublin-central-area */
+#dublin-central-img {
+    position: absolute;
+    top: 379px;
+    left: 205px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+area#dublin-central-area:hover + #dublin-central-img {
+    opacity: 1;
+}
+
+/* Styles for dublin-south-central-area */
+#dublin-south-central-img {
+    position: absolute;
+    top: 413px;
+    left: 147px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+area#dublin-south-central-area:hover + #dublin-south-central-img {
+    opacity: 1;
+}
+
+/* Styles for dublin-bay-south-area */
+#dublin-bay-south-img {
+    position: absolute;
+    top: 418px;
+    left: 209px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+area#dublin-bay-south-area:hover + #dublin-bay-south-img {
+    opacity: 1;
+}
+
+.ck {
+    display: none;
+}
+
+#ck1 {
+    display: visible;
+}
+
+.candidates {
+    display: none;
+}
+
+#CW1Elect {
+    display: visible;
+}
+
+#CW2Elect {
+    display: visible;
+}
+
+#CW3Elect {
+    display: visible;
+}
+
+.form-control {
+    color: #e5f2fe;
+    background-color: #d6c2c2;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 15px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    margin-top: 10px;
+    text-align: center;
+    width: 300px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 20px);
+}
+
+#area-dropdown option:hover {
+    background-color: yellow;
+}
+
+.hover-area {
+    cursor: pointer;
+}
+.hover-area img {
+    display: none;
+    transition: opacity 0.3s ease;
+}
+.hover-area img.active {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    opacity: 1;
+}
